@@ -158,8 +158,8 @@
         },
         "content": {
           "len": 900,
-          "title": "reqContentTitle",
-          "season": "reqContentSeason",
+          "season": "apnFpdSiteIdContentSeason",
+          "title": "apnFpdSiteIdContentTitle",
           "data": [
             {
               "id": "reqContentDataId1",
@@ -168,6 +168,14 @@
             {
               "id": "reqContentDataId2",
               "name": "reqContentDataName2"
+            },
+            {
+              "id": "apnFpdSiteIdContentDataId1",
+              "name": "apnFpdSiteIdContentDataName1"
+            },
+            {
+              "id": "apnFpdSiteIdContentDataId2",
+              "name": "apnFpdSiteIdContentDataName2"
             }
           ]
         },
@@ -176,21 +184,6 @@
             "id": "apnFpdSiteId",
             "publisher": {
               "id": "1"
-            },
-            "content": {
-              "len": 900,
-              "title": "apnFpdSiteIdContentTitle",
-              "season": "apnFpdSiteIdContentSeason",
-              "data": [
-                {
-                  "id": "apnFpdSiteIdContentDataId1",
-                  "name": "apnFpdSiteIdContentDataName1"
-                },
-                {
-                  "id": "apnFpdSiteIdContentDataId2",
-                  "name": "apnFpdSiteIdContentDataName2"
-                }
-              ]
             }
           }
         }

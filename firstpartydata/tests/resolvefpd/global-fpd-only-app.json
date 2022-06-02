@@ -1,9 +1,8 @@
 {
-  "description": "Global and bidder FPD defined for site and user. Global FPD has site.content.data",
+  "description": "Global and bidder FPD defined for site and user. Global FPD has app.content.data",
   "inputRequestData": {
-    "site": {
-      "id": "reqSiteId",
-      "page": "http://www.foobar.com/1234.html",
+    "app": {
+      "id": "reqAppId",
       "publisher": {
         "id": "1"
       },
@@ -15,7 +14,7 @@
         "len": 900
       },
       "ext": {
-        "testSiteExt": 123
+        "testAppExt": 123
       }
     },
     "device": {
@@ -32,21 +31,12 @@
   },
   "bidderConfigFPD": {
     "appnexus": {
-      "site": {
-        "id": "apnSiteId",
-        "page": "http://www.foobar.com/1234.html",
-        "ref": "fpdRef",
-        "content": {
-          "episode": 8,
-          "title": "episodeName8",
-          "series": "TvName",
-          "season": "season4",
-          "len": 900
-        },
+      "app": {
+        "id": "apnAppId",
         "ext": {
           "data": {
             "morefpdData": "morefpddata",
-            "siteFpddata": "siteFpddata",
+            "appFpddata": "appFpddata",
             "moreFpd": {
               "fpd": 123
             }
@@ -56,63 +46,51 @@
     }
   },
   "globalFPD": {
-    "site": {
-      "siteFpd": 123
-    },
     "app": {
-      "appFpd": {
-        "testValue": true
-      }
+      "appFpd": 123
     },
     "user": {
       "testUserFpd": "testuser"
     },
-    "siteContentData": [
+    "appContentData": [
       {
-        "id": "siteData1",
-        "name": "siteName1"
+        "id": "appData1",
+        "name": "appName1"
       },
       {
-        "id": "siteData2",
-        "name": "siteName2"
+        "id": "appData2",
+        "name": "appName2"
       }
     ]
   },
   "outputRequestData": {
-    "site": {
-      "id": "reqSiteId",
-      "page": "http://www.foobar.com/1234.html",
-      "ref": "fpdRef",
+    "app": {
+      "id": "reqAppId",
       "publisher": {
         "id": "1"
       },
       "content": {
-        "episode": 8,
-        "title": "episodeName8",
-        "series": "TvName",
-        "season": "season4",
-        "len": 900,
         "data": [
           {
-            "id": "siteData1",
-            "name": "siteName1"
+            "id": "appData1",
+            "name": "appName1"
           },
           {
-            "id": "siteData2",
-            "name": "siteName2"
+            "id": "appData2",
+            "name": "appName2"
           }
         ]
       },
       "ext": {
-        "testSiteExt": 123,
+        "testAppExt": 123,
         "data": {
-          "id": "apnSiteId",
+          "id": "apnAppId",
           "moreFpd": {
             "fpd": 123
           },
           "morefpdData": "morefpddata",
-          "siteFpd": 123,
-          "siteFpddata": "siteFpddata"
+          "appFpd": 123,
+          "appFpddata": "appFpddata"
         }
       }
     },
